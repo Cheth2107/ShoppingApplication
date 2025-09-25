@@ -1,0 +1,15 @@
+# Maven / Gradle
+target/
+build/
+*.iml
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
