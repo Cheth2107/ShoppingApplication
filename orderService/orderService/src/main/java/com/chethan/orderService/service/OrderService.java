@@ -5,6 +5,7 @@ import com.chethan.orderService.dto.OrderRequest;
 import com.chethan.orderService.model.Order;
 import com.chethan.orderService.model.OrderLineItems;
 import com.chethan.orderService.repository.OrderRepository;
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,6 +14,7 @@ import java.util.UUID;
 
 @Service
 @AllArgsConstructor
+@Transactional
 public class OrderService {
 
     private final OrderRepository orderRepository;
